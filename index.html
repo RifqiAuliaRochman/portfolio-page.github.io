@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ee442273.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-link" id="navLink">
+            <i class="far fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="#school">SCHOOL</a></li>
+                <li><a href="">EXPERIENCES</a></li>
+                <li><a href="">WORK</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="header-text">
+        <h1>Self Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, laborum possimus a sapiente asperiores commodi obcaecati, facilis ullam ut quasi architecto magnam quam. Harum voluptate illo facilis porro, cupiditate velit.</p>
+        <div class="header-icon">
+            <ul>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></i></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- ------about------ -->
+
+
+<section class="about">
+        <div class="aboutCol">
+            <img src="images/me.jpg">
+            <h2>KNOW ME MORE</h2>
+            <h3>I am a college student of Universitas Merdeka Malang</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aliquid non nisi dignissimos itaque quasi asperiores enim magnam aut earum repellendus neque obcaecati exercitationem accusantium illum. Ad fugiat perferendis sunt.</p>
+            <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequuntur unde, eaque laboriosam sequi nam?</p>
+            <div class="button">
+                <a href="">READ MORE</a>
+            </div>
+        </div>
+</section>
+
+
+<!-- ---------school---------- -->
+
+<section class="school" id="school">
+    <div class="title">
+        <h2>School History</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora veniam sit at libero animi.</p>
+    </div>
+    <div class="row">
+        <div class="schoolCol">
+            <img src="images/topi-sd.png">
+            <p>SD KAUMAN 2 MALANG <br>Jl. Kawi Malang <br>2007-2014</p>
+            <div class="schoolBottom">
+                <h3>Elementary School</h3>
+            </div>
+        </div>
+        <div class="schoolCol">
+            <img src="images/topi-smp.png">
+            <p>SD KAUMAN 2 MALANG <br>Jl. Kawi Malang <br>2007-2014</p>
+            <div class="schoolBottom">
+                <h3>Elementary School</h3>
+            </div>
+        </div>
+        <div class="schoolCol">
+            <img src="images/topi-sma.png">
+            <p>SD KAUMAN 2 MALANG <br>Jl. Kawi Malang <br>2007-2014</p>
+            <div class="schoolBottom">
+                <h3>Elementary School</h3>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- --------javascript------- -->
+<script>
+
+    var navLink = document.getElementById("navLink");
+
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
