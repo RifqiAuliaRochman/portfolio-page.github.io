@@ -85,6 +85,9 @@ nav .fas, nav .far{
     display: none;
 }
 @media (max-width:700px) {
+    .header{
+        overflow: hidden;
+    }
     .header-text h1{
         font-size: 33px;
     }
@@ -174,6 +177,7 @@ nav .fas, nav .far{
     text-align: center;
     margin: auto;
     padding-top: 80px;
+    border-bottom: 1px solid #b1f8b8;
 }
 
 .title h2{
@@ -200,6 +204,9 @@ nav .fas, nav .far{
 .schoolCol img{
     width: 200px;
 }
+.schoolCol a{
+    color:#0c4c3c;
+}
 .schoolBottom{
     width: 75%;
     background: #fff;
@@ -208,10 +215,11 @@ nav .fas, nav .far{
     transition: 0.5s;
 }
 .schoolCol:hover{
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .schoolBottom:hover{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 .schoolBottom::after{
     content: '';
@@ -226,6 +234,73 @@ nav .fas, nav .far{
     width: 80%;
 }
 
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+        
+    }
+}
+
+
+
+/* ---------SKILLS-------- */
+
+
+.skill{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.skillCol{
+    flex-basis: 31%;
+    margin-bottom: 8%;
+    padding: 20px 0 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.skillCol p{
+    font-size: 13px;
+    padding: 5% 0 8%;
+}
+.skillCol img{
+    width: 200px;
+}
+.skillCol a{
+    color:#0c4c3c;
+}
+.skillText p{
+    margin: 5px 0 15px;
+    color: #aeaeae;
+}
+.skillBottom{
+    width: 75%;
+    background: #fff;
+    padding: 5%;
+    margin: 0 auto 45px;
+    transition: 0.5s;
+}
+.skillCol:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.skillBottom:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.skillBottom::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #05F4B7;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.skillBottom:hover::after{
+    width: 80%;
+}
 
 
 
